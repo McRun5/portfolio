@@ -1,18 +1,11 @@
 import React from 'react'
-import { TitleOne, ExpList, Exp, ExpTitle, ExpDescription, ExpDate } from '../styled/exp'
-import styled from 'styled-components'
-
+import { Container, TitleOne, ExpList, Exp, ExpTitle, ExpDescription, ExpDate } from '../styled/exp';
 import { ThemeContext } from  '../ThemeContext';
-
 
 
  const Experience = () => {
 
     const [ theme ] = React.useContext(ThemeContext);
-
-
-
-
     const experiences = [
         {
             id:1,
@@ -34,10 +27,9 @@ import { ThemeContext } from  '../ThemeContext';
         },
     ]
 
-    
     return (
-        <> 
-            <TitleOne>Experience <span role="img">🔨</span></TitleOne>
+        <Container> 
+            <TitleOne>Experience <span role="img" aria-label="marteau">🔨</span></TitleOne>
             <ExpList>
                 {
                     experiences.map(e => (
@@ -49,7 +41,7 @@ import { ThemeContext } from  '../ThemeContext';
                     ))
                 }
             </ExpList>
-        </>
+        </Container>
     )
 }
 

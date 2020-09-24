@@ -1,14 +1,11 @@
 import React from 'react'
-import { Container, TitleOne, TechList, Button, Title, TechContainer } from '../styled/techs'
+import { Container, TitleOne, TechList, TechContainer } from '../styled/techs'
+import { motion } from 'framer-motion'
+import '../App.css'
 
 const Technologies = () => {
 
-
     const Techs = [
-        {
-            id:-1,
-            title: "💪"
-        },
         {
             id:0,
             title: "ReactJs"
@@ -56,35 +53,31 @@ const Technologies = () => {
         {
             id:12,
             title: "C"
-        },{
-            id:12,
-            title:"👍"
         }
     ]
-
-    const [x, setX] = React.useState(0)
-
-    const prev = () => {
-        x>-40? setX(x-10) : setX(x)
-    }
-
-    const next = () => {
-        x<4 ? setX(x+10) : setX(x)
-    }
+    const [hovered, setHovered] = React.useState(false)
 
     return (
         <Container>
-            <TitleOne>Technologies <span role="img">💻</span></TitleOne>
+            <TitleOne onMouseEnter={()=>setHovered(!hovered)} onMouseLeave={()=>setHovered(!hovered)}>
+                Technologies <span role="img" aria-label="marteau">💻</span>
+            </TitleOne>
             <TechList>
-                <Button onClick={()=>prev()}><span role="img">⬅️</span></Button>
                 <TechContainer >
                     {
                     Techs.map(t => (
-                        <Title onMouseEnter={()=> setX(0)} x={x}> {t.title} </Title>
+                        <motion.p 
+                            className="myTitle"
+                            transition={{ type: "spring", stiffness: 100 }}
+                            whileHover={{
+                                scale: 3,
+                                transition: { duration: .1 },
+                            }}> 
+                          {t.title} 
+                        </motion.p>
                     ))
                     }
                 </TechContainer>
-                <Button onClick={()=>next()}><span role="img">➡️</span></Button>
             </TechList>
         </Container>
     )

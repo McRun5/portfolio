@@ -14,13 +14,13 @@ const theme = {
   dark : {
     "backgroundColor":"#000",
     "textColor": "#fff",
-    "secondBackgroundColor":"#FF2A00",
+    "secondBackgroundColor":"#FF0055",
     "secondTextColor": "#ff2a00"
   },
   light : {
     "backgroundColor":"#fff",
     "textColor": "#000",
-    "secondBackgroundColor":"#e9e5ff",
+    "secondBackgroundColor":"rgba(0,0,0,0.2)",
     "secondTextColor": "#ff2a00"
   }
 }

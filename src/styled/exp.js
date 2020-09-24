@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+     
+`
 
 export const TitleOne = styled.h1`
     color: "red";
@@ -7,10 +10,10 @@ export const TitleOne = styled.h1`
     margin:0;
 `
 
-
 export const ExpList = styled.div`
     background-color: "blue";
 `
+
 
 export const ExpTitle = styled.h2`
 `
@@ -33,6 +36,7 @@ export const Exp = styled.div`
     padding: 1em 2em;
     border-radius:8px;
     margin: 1em 0;
+    cursor:pointer;
     overflow:hidden;
     transition: background-color .4s;
     &:hover{
@@ -40,7 +44,7 @@ export const Exp = styled.div`
         ${ props =>{
             switch(props.currentTheme){
                 case 'colored' : return "#2700eb";
-                case 'dark' : return "#e52500";
+                case 'dark' : return "#d80049";
                 case 'light' : return "#ffe9e5";
                 default : return "#000";
             }

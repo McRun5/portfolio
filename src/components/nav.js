@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { ThemeContext } from  '../ThemeContext';
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
 
@@ -26,6 +27,7 @@ const Nav = () => {
             }};
         }
         a ,a:visited{
+            cursor:pointer;
             color: ${props => {
                 switch(theme){
                     case "colored" : return props.theme.colored.textColor;
@@ -43,10 +45,9 @@ const Nav = () => {
         <div className="navigationBar">
             <GlobalStyle />
             {/*<img src={logo} className="logo" alt="Logo"/>*/}
-            <a href="/"><h3 style={{margin:0}}>McRun</h3></a>
+            <Link to="/"><h3 style={{margin:0}}>McRun</h3></Link>
             <ul>
-                <li><a href="/" >ABOUT</a></li>
-                <li><a href="/">BLOG</a></li>
+                <li><p><Link to="/blog">BLOG</Link></p></li>
             </ul> 
             <div className="themeContainer">
                 <button id="colored" onClick={() => setTheme("colored")}></button>
