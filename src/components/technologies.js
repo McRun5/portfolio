@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TitleOne, TechList, TechContainer } from '../styled/techs'
+import { Container, TitleOne, Indice, TechContainer } from '../styled/techs'
 import { motion } from 'framer-motion'
 import '../App.css'
 
@@ -8,7 +8,7 @@ const Technologies = () => {
     const Techs = [
         {
             id:0,
-            title: "ReactJs"
+            title: "PHP"
         },
         {
             id:1,
@@ -24,11 +24,11 @@ const Technologies = () => {
         },
         {
             id:4,
-            title: "PHP"
+            title: "ReactJs"
         },
         {
             id:6,
-            title: "Java"
+            title: "Framer motion"
         },
         {
             id:7,
@@ -53,6 +53,10 @@ const Technologies = () => {
         {
             id:12,
             title: "C"
+        },
+        {
+            id:13,
+            title: "Java"
         }
     ]
     const [hovered, setHovered] = React.useState(false)
@@ -62,23 +66,28 @@ const Technologies = () => {
             <TitleOne onMouseEnter={()=>setHovered(!hovered)} onMouseLeave={()=>setHovered(!hovered)}>
                 Technologies <span role="img" aria-label="marteau">💻</span>
             </TitleOne>
-            <TechList>
-                <TechContainer >
-                    {
-                    Techs.map(t => (
-                        <motion.p 
-                            className="myTitle"
-                            transition={{ type: "spring", stiffness: 100 }}
-                            whileHover={{
-                                scale: 3,
-                                transition: { duration: .1 },
-                            }}> 
-                          {t.title} 
-                        </motion.p>
-                    ))
-                    }
-                </TechContainer>
-            </TechList>
+            <TechContainer 
+            drag="x"
+            dragConstraints={{ left: -200, right: 200 }}
+            dragElastic={0.2}
+            >
+                {
+                Techs.map(t => (
+                    <motion.p 
+                        className="myTitle"
+                        transition={{ type: "spring", stiffness: 100 }}
+                        whileHover={{
+                            scale: 3,
+                            transition: { duration: .1 },
+                        }}> 
+                        {t.title} 
+                    </motion.p>
+                ))
+                }
+            </TechContainer>
+            <Indice>
+                drag <span role="img" aria-label="arrow">⬆️</span>
+            </Indice>
         </Container>
     )
 }

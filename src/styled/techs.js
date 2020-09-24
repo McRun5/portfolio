@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Container = styled.div`
     margin : 19 auto;
@@ -18,7 +19,7 @@ export const TechList = styled.div`
     align-items:center;
 `
 
-export const TechContainer = styled.div`
+export const TechContainer = styled(motion.div)`
     display:flex;
     flex-flow: row nowrap;
     align-items:center;
@@ -37,4 +38,9 @@ export const Title = styled.p`
     padding: 5px 20px;
     border-radius:4px;
     margin: 0 10px;
+`
+export const Indice = styled.p`
+    font-style: italic;
+    font-size:14px;
+    text-align:center
 `
