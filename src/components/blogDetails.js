@@ -6,8 +6,10 @@ import { Posts } from './blog';
 
 const BlogDetails = ({match}) => {
 
-    let id  = match.params.id;
-    let post = Posts.find((p)=> p.id == id); 
+    let slug  = match.params.slug.replace('-',' ');
+    let post = Posts.find((p) =>
+        p.title === slug
+    ); 
 
     return (
         <Container>

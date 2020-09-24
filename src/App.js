@@ -35,7 +35,7 @@ const Container = styled.div`
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/blog" exact component={Blog} />
-                <Route path="/blog/:id" component={BlogDetails} />
+                <Route path="/blog/:slug" component={BlogDetails} />
               </Switch>
             </Container>
           </IconContext.Provider>

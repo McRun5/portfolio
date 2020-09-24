@@ -37,7 +37,6 @@ export const Posts = [
 const Blog = () => {
 
     const [ theme ] = React.useContext(ThemeContext);
-
     return (
         <>
             <Nav /> 
@@ -45,7 +44,7 @@ const Blog = () => {
             <BlogPosts>
                 {
                     Posts.map(p => (
-                        <Link to={`./blog/${p.id}`} post={p}> 
+                        <Link to={`./blog/${p.title.replace(' ', '-')}`} post={p}> 
                             <Post currentTheme={theme}>
                                 <Image src={p.img}></Image>
                                 <PostInfo>
