@@ -5,7 +5,7 @@ export const Container = styled.div`
     margin : 19 auto;
     padding: 1em 4em;
     margin:2em 0;
-    overflow:hidden
+    overflow:hidden;
 `
 
 export const TitleOne = styled.h1`

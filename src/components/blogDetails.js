@@ -22,7 +22,7 @@ const BlogDetails = ({match}) => {
                 {
                     post.content.map(e => {
                         if(e.type === 'paragraph') return <ContentParagraph>{e.data}</ContentParagraph> 
-                        else return <img src={e.data} />
+                        else return <img src={e.data} alt="img" />
                     })
                 }
                 
