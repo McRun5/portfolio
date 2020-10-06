@@ -21,7 +21,7 @@ export const Description = styled.h4`
 export const Date = styled.p`
     font-style: italic
 `
-export const Content = styled.p`
+export const ContentParagraph = styled.p`
     text-align:left;
     white-space: pre-line;
 `

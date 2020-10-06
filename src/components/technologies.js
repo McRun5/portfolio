@@ -68,7 +68,7 @@ const Technologies = () => {
             </TitleOne>
             <TechContainer 
             drag="x"
-            dragConstraints={{ left: -200, right: 200 }}
+            dragConstraints={{ left: -200, right: 0 }}
             dragElastic={0.2}
             >
                 {
@@ -77,7 +77,7 @@ const Technologies = () => {
                         className="myTitle"
                         transition={{ type: "spring", stiffness: 100 }}
                         whileHover={{
-                            scale: 3,
+                            scale: 1.2,
                             transition: { duration: .1 },
                         }}> 
                         {t.title} 

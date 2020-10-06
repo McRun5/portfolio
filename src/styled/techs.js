@@ -5,6 +5,7 @@ export const Container = styled.div`
     margin : 19 auto;
     padding: 1em 4em;
     margin:2em 0;
+    overflow:hidden
 `
 
 export const TitleOne = styled.h1`
@@ -21,10 +22,9 @@ export const TechList = styled.div`
 
 export const TechContainer = styled(motion.div)`
     display:flex;
-    flex-flow: row nowrap;
+    position: relative;
     align-items:center;
     justify-content: center;
-    width: 100%;
 `
 
 export const Button = styled.h2`
