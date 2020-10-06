@@ -8,7 +8,7 @@ const Screen = () => {
         <div className="screenContainer">
             <div className="main">
                 <h1>Hello <span  role="img" aria-label="hand">👋</span></h1>
-                <p className="description">I am <span className="fullname">Abdelilah McRun</span>, Front-end developer</p>
+                <p className="description">I am <span className="fullname">Abdelilah Makrane</span>, Front-end developer</p>
                 <div className="socials">
                     <a href="https://github.com/McRun5" target="_blank" rel="noopener noreferrer" className="socialButton"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/abdelilah-makrane/" target="_blank" rel="noopener noreferrer" className="socialButton"><FaLinkedin/></a>
