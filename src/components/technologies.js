@@ -68,7 +68,7 @@ const Technologies = () => {
             </TitleOne>
             <TechContainer 
             drag="x"
-            dragConstraints={{ left: -200, right: 0 }}
+            dragConstraints={{ left: -200, right: 200 }}
             dragElastic={0.2}
             >
                 {
