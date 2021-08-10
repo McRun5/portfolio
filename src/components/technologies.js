@@ -20,7 +20,7 @@ const Technologies = () => {
         },
         {
             id:3,
-            title: "React native"
+            title: "Javascript"
         },
         {
             id:4,
@@ -28,35 +28,35 @@ const Technologies = () => {
         },
         {
             id:6,
-            title: "Framer motion"
+            title: "Deep Learning"
         },
         {
             id:7,
-            title: "Javascript"
+            title: "Pandas"
         },
         {
             id:8,
-            title: "Styled Components"
+            title: "TensorFlow"
         },
         {
             id:9,
-            title: "ExpressJs"
+            title: "PowerBi"
         },
         {
             id:10,
-            title: "MySQL"
+            title: "SQL"
         },
         {
             id:11,
-            title: "ML"
+            title: "Python"
         },
         {
             id:12,
-            title: "C"
+            title: "Machine Learning"
         },
         {
             id:13,
-            title: "Java"
+            title: "C"
         }
     ]
     const [hovered, setHovered] = React.useState(false)
