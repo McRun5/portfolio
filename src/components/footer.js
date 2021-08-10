@@ -5,7 +5,7 @@ import {Container, FootTitle, FootSocials, FootLink} from '../styled/foot'
 const footer = () => {
     return (
         <Container>
-            <FootTitle>McRun ©2020</FootTitle>
+            <FootTitle>McRun ©2021</FootTitle>
             <FootSocials>
                 <FootLink href="https://github.com/McRun5"   target="_blank" rel="noopener">
                     <FaGithub />
