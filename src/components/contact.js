@@ -10,8 +10,8 @@ const Contact = () => {
     return (
         <Container>
             <Title>Get in touch</Title>
-            <Paragraph>I am a master's degree student ( computer science ) in Sidi Mohamed Ben Abdellah University, it's my last year.</Paragraph>
-            <Paragraph>Actually, i'm looking for an internship to complete my studies. </Paragraph>
+            <Paragraph>I have a master's degree ( computer science ) from Sidi Mohamed Ben Abdellah University</Paragraph>
+            <Paragraph>Actually, i am ready to start the next chapter of my life. </Paragraph>
             <Paragraph>You can reach out me by email at <Important currentTheme={theme}>makrane.abdelilah@gmail.com</Important></Paragraph>
             <Paragraph>Looking for my first experience ...</Paragraph>
         </Container>
